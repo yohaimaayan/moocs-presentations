@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../../lib/css/monokai.css">
+		<link rel="stylesheet" href="styling.css">
+		<link rel="stylesheet" href="../styling.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../css/print/pdf.css' : '../../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!-- Fonts for the chalkboard icons -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section style="text-align:right">
+					<h1>חיבור וחיסור בהצגה <br>טריגונומטרית</h1> <br>
+					<h2>לא!</h2>
+				</section>
+				<section style="text-align:right">
+					<p class="fragment">
+						<u>דוגמה</u>:
+						<br><br>
+					<span class="fragment">
+						$z_1 = 3\operatorname{cis}\left(270^{\text{o}}\right)$
+					</span>
+					</p>
+
+					<p class="fragment">
+						&nbsp;&nbsp;$z_2 = 2\operatorname{cis}\left(60^{\text{o}}\right)$
+					</p>
+
+					<p class="fragment bump">
+						<br>
+					נסתכל בתיאור הגיאומטרי:
+					</p>
+				</section>
+				<section >
+					<iframe scrolling="no" 
+					title="Sum of complex numbers in geometric form" 
+					src="https://www.geogebra.org/material/iframe/id/sw95tusq/width/1000/height/800/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" 
+					width="1000px" height="800px" style="border:0px;"> 
+					</iframe>
+				</section>
+				<section style="text-align:right">
+					<p class="">
+						<u>דוגמה</u>:
+						<br><br>
+					<span class="">
+						$z_1 = 3\operatorname{cis}\left(270^{\text{o}}\right)$
+					</span>
+					<p class="">
+						&nbsp;&nbsp;$z_2 = 2\operatorname{cis}\left(60^{\text{o}}\right)$
+						<br><br>
+					</p>
+					</p>
+
+					<p class="fragment">
+					לא נראה שיש קשר ישיר בין הזווית והמודול של $z_1+z_2$
+					<span class="fragment">
+						<br><br>
+						לזוויות ולמודולים של $z_1$ ושל $z_2$ !
+					</span>
+					</p>
+					<p class="fragment bump">
+					<br>
+						לכן לא מחברים
+					<span class="fragment">
+						(וגם לא מחסרים)
+					</span>
+					<span class="fragment">
+						בהצגה טריגונומטרית!
+					</span>
+					</p>
+					</section>
+				<section>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				rtl: true,
+				margin: 0.1,
+				width: 1400,
+				height: 800,
+				progress: false,
+				hash: true,
+				chalkboard: {
+					// optionally load pre-recorded chalkboard drawing from file
+					// src: "chalkboard.json", //
+					background: [ 'rgba(127,127,127,.1)' , '../../plugin/chalkboard/img/blackboard.png' ],
+					toggleChalkboardButton: true
+				},
+				dependencies: [
+					{ src: '../../plugin/markdown/marked.js' },
+					{ src: '../../plugin/markdown/markdown.js' },
+					{ src: '../../plugin/notes/notes.js', async: true },
+					{ src: '../../plugin/highlight/highlight.js', async: true },
+					{ src: '../../plugin/math/math.js', async: true },
+					{ src: '../../plugin/chalkboard/chalkboard.js' }
+				],
+				keyboard: {
+					67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
+					66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
+					46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+					8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
+					68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
+					88: function() { RevealChalkboard.colorNext() },	// cycle colors forward when 'x' is pressed
+					89: function() { RevealChalkboard.colorPrev() },	// cycle colors backward when 'y' is pressed
+				}
+			});
+		</script>
+	</body>
+</html>

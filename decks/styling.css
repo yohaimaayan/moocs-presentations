@@ -1,0 +1,77 @@
+.fractionfont{
+	/* font-size: 1.1em;*/
+}
+
+
+.smallgap {
+	position:relative;
+	right:20px;
+}
+
+.gap {
+	position:relative;
+	right:30px;
+}
+
+.biggap {
+	position:relative;
+	right:70px;
+}
+
+.hugegap {
+	position:relative;
+	right:190px;
+}
+
+.lgap {
+	position:relative;
+	left:60px;
+}
+
+.ltr {
+	direction: ltr;
+}
+
+/* The following class is meant for elements that should have a box appear around them after all fragments have been shown */
+.box {
+}
+
+/* The following class is meant for elements that should have a box around them at all time */
+.bbox {
+	border-style: solid;
+	border-width: 3px 3px;
+	padding: 30px 30px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.largetext {
+	font-size: 46pt;
+}
+
+.top100{
+	margin-top: 100px;
+}
+
+.laargetext {
+	font-size: 56pt;
+}
+

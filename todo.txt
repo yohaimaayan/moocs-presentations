@@ -1,0 +1,5 @@
+- Animating within equations
+- Changing text color by animation (i.e. Naturals, N turns yellow then white again)
+- Adding remark with arrow (where the remark is placed below somewhere)
+- Add box as a fragment after entire text is revealed
+- Have = aligned on muliline equations that are fragmented (currently using \phantom, see 11-pilot)
